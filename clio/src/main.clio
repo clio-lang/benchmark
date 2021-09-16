@@ -1,0 +1,19 @@
+fn fib n a b:
+  if n == 0: a
+  else if n == 1: b
+  else: fib (n - 1) b (a + b)
+
+fn benchmark loops current:
+  if loops:
+    start = performance.now()
+    fib 998 0 1
+    end = performance.now()
+    minimum = Math.min current (end - start)
+    benchmark (loops - 1) minimum
+  else:
+    current
+
+export fn main argv:
+  minimum = benchmark 10000 Infinity
+  nanoseconds = minimum * 1000 * 1000
+  console.log f"Took {nanoseconds}ns"
