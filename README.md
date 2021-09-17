@@ -3,6 +3,10 @@
 This repository implements the fib function in several languages
 and measures the execution time for each of them.
 
+## Results
+
+![Results](./results.png)
+
 ## How to run the...
 
 ### C version
