@@ -24,6 +24,12 @@ of getting time in nanoseconds. If you know a way, please make a pull request.
 clio run
 ```
 
+### Go version
+
+```bash
+go run .
+```
+
 ### JavaScript version
 
 ```bash
