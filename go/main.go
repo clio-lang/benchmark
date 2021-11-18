@@ -6,16 +6,16 @@ import (
 	"time"
 )
 
-func fib(n, a, b int) int {
+func fib(n, a, b int) {
 	if n == 0 {
-		return a
+		return
 	}
 
 	if n == 1 {
-		return b
+		return
 	}
 
-	return fib(n-1, b, a+b)
+	fib(n-1, b, a+b)
 
 }
 
